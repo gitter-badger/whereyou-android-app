@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WhereYou</string>
+    <string name="server_client_id">21692891960-7pt3sfs3a27rll47suvf5vk70vqhfgl0.apps.googleusercontent.com</string>
+
+    <string name="action_toggle_open">Открыть</string>
+    <string name="action_toggle_close">Закрыть</string>
+
+    <string name="action_navigation_map">Карта</string>
+    <string name="action_navigation_people">Контакты</string>
+    <string name="action_navigation_settings">Настройки</string>
+
+    <string name="action_toolbar_gps_state">Статус передачи координат</string>
+</resources>

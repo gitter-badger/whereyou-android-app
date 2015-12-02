@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_id": "whereyou-51e5b",
+    "project_number": "21692891960",
+    "name": "WhereYou"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21692891960:android:5800cfc9822423c6",
+        "client_id": "android:com.skynox.whereyou.app",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.skynox.whereyou.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21692891960-7pt3sfs3a27rll47suvf5vk70vqhfgl0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skynox.whereyou.app",
+            "certificate_hash": "1CDB078FA70D21912056C160144308D9BAD21A36"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/listview_selector_people">
+
+    <ImageView
+            android:id="@+id/listview_item_people_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/listview_item_people_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginListViewItemTop"
+                android:layout_marginLeft="@dimen/marginListViewItemLeft"
+                android:text="T"
+                android:textSize="@dimen/sizeListViewText"
+                android:textColor="@color/textColorPrimary"/>
+
+        <TextView
+                android:id="@+id/listview_item_people_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginListViewItemTop"
+                android:layout_marginLeft="@dimen/marginListViewItemLeft"
+                android:text="T"
+                android:textSize="@dimen/sizeListViewTextDesc"
+                android:textColor="@color/textColorPrimary"/>
+
+    </LinearLayout>
+
+</LinearLayout>

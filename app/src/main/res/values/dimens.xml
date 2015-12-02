@@ -1,0 +1,11 @@
+<resources>
+
+    <dimen name="heightNavigationHead">192dp</dimen>
+
+    <dimen name="sizeListViewText">20sp</dimen>
+    <dimen name="sizeListViewTextDesc">12sp</dimen>
+
+    <dimen name="marginListViewItemTop">10dp</dimen>
+    <dimen name="marginListViewItemLeft">5dp</dimen>
+
+</resources>
