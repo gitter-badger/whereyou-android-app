@@ -21,14 +21,14 @@
                       android:layout_width="match_parent"
                       android:layout_height="match_parent"
                       app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-            <TextView
+            <fragment
+                    android:id="@+id/mapView"
+                    android:name="com.google.android.gms.maps.MapFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TEST MAP"
-                    android:textColor="@color/textColorSecondary"/>
+                    android:layout_height="match_parent"/>
 
         </LinearLayout>
+
 
     </android.support.design.widget.CoordinatorLayout>
 
