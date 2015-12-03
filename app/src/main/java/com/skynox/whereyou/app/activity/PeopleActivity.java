@@ -15,7 +15,8 @@ import com.skynox.whereyou.app.adapters.PeopleListViewAdapter;
 
 public class PeopleActivity extends AbstractDefaultActivity {
 
-    private int layout = R.layout.activity_people;
+    private final int LAYOUT = R.layout.activity_people;
+    private final String TAG = "PeopleActivity";
     private ListView listViewPeople;
     private PeopleListViewAdapter listViewAdapter;
 
@@ -23,8 +24,8 @@ public class PeopleActivity extends AbstractDefaultActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(layout);
-        initToolbar();
+        setContentView(LAYOUT);
+        initToolbar(LAYOUT);
         initNavigationView();
     }
 

@@ -1,5 +1,6 @@
 package com.skynox.whereyou.app;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.skynox.whereyou.app.model.PeopleModel;
 
 import java.util.ArrayList;
@@ -17,5 +18,7 @@ public class Config {
     public static int ACTIVE_ACTIVITY = 0;
 
     public static ArrayList<PeopleModel> PEOPLE_LIST = new ArrayList<PeopleModel>();
+
+    public static GoogleSignInAccount ACCOUNT;
 
 }

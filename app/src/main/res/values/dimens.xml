@@ -1,10 +1,18 @@
 <resources>
 
+    <!-- Основное -->
     <dimen name="heightNavigationHead">192dp</dimen>
+    <dimen name="sizeTextNormal">15sp</dimen>
 
+
+    <!-- MainActivity -->
+    <dimen name="marginBottonSignInStatus">15dp</dimen>
+    <dimen name="marginSignInButton">15dp</dimen>
+
+
+    <!-- PeopleActivity -->
     <dimen name="sizeListViewText">20sp</dimen>
     <dimen name="sizeListViewTextDesc">12sp</dimen>
-
     <dimen name="marginListViewItemTop">10dp</dimen>
     <dimen name="marginListViewItemLeft">5dp</dimen>
 

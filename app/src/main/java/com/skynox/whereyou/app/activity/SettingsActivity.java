@@ -11,15 +11,17 @@ import com.skynox.whereyou.app.R;
 
 public class SettingsActivity extends AbstractDefaultActivity {
 
-    private int layout = R.layout.activity_settings;
+    private final int LAYOUT = R.layout.activity_settings;
+    private final String TAG = "SettingsActivity";
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(layout);
-        initToolbar();
+        setContentView(LAYOUT);
+        initToolbar(LAYOUT);
         initNavigationView();
+
     }
 
 }

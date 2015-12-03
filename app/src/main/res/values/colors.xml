@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Основное -->
     <color name="colorPrimary">#F5F5F5</color>
     <color name="colorPrimaryDark">#E0E0E0</color>
     <color name="mainBackground">#FAFAFA</color>
@@ -14,5 +16,9 @@
 
     <color name="colorListViewItem">#212121</color>
     <color name="colorListViewItemPress">#373737</color>
+
+
+    <!-- MainActivity -->
+    <color name="loginBackground">#E0E0E0</color>
 
 </resources>

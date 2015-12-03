@@ -1,12 +1,28 @@
-<android.support.v4.widget.DrawerLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/mainBackground"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal"
+        android:background="@color/loginBackground"
         android:fitsSystemWindows="true"
         tools:context=".MainActivity">
 
+    <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/marginSignInButton"/>
 
-</android.support.v4.widget.DrawerLayout>
+    <TextView
+            android:id="@+id/sign_in_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="@dimen/sizeTextNormal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/marginBottonSignInStatus"/>
+
+</LinearLayout>

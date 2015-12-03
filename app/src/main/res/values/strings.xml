@@ -1,13 +1,31 @@
 <resources>
+
+    <!-- Основное -->
     <string name="app_name">WhereYou</string>
-    <string name="server_client_id">21692891960-7pt3sfs3a27rll47suvf5vk70vqhfgl0.apps.googleusercontent.com</string>
+    <string name="server_client_id">21692891960-ga8rntsjg2giuib0aji3h2llv5vls3vo.apps.googleusercontent.com</string>
 
     <string name="action_toggle_open">Открыть</string>
     <string name="action_toggle_close">Закрыть</string>
-
     <string name="action_navigation_map">Карта</string>
     <string name="action_navigation_people">Контакты</string>
     <string name="action_navigation_settings">Настройки</string>
-
     <string name="action_toolbar_gps_state">Статус передачи координат</string>
+
+
+    <!-- MainActivity -->
+    <string name="message_signin_connectfail">Ошибка соединения с сервером.</string>
+    <string name="message_signin_authfail">Ошибка при авторизации.</string>
+
+
+    <!-- MainActivity -->
+    <string name="map_activity_name">WhereYou - Карта</string>
+
+
+    <!-- PeopleActivity -->
+    <string name="people_activity_name">WhereYou - Контакты</string>
+
+
+    <!-- SettingsActivity -->
+    <string name="settings_activity_name">WhereYou - Настройки</string>
+
 </resources>

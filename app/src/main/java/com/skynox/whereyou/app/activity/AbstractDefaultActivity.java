@@ -30,7 +30,7 @@ public class AbstractDefaultActivity extends AppCompatActivity {
     }
 
 
-    public void initToolbar() {
+    public void initToolbar(int layout) {
         toolBar = (Toolbar) findViewById(R.id.toolbar);
         toolBar.setTitle(R.string.app_name);
         toolBar.inflateMenu(R.menu.menu_toolbar);
@@ -52,6 +52,19 @@ public class AbstractDefaultActivity extends AppCompatActivity {
                     }
                 }
         );
+
+        switch (layout) {
+            case R.layout.activity_map:
+                toolBar.setTitle(R.string.map_activity_name);
+                break;
+            case R.layout.activity_people:
+                toolBar.setTitle(R.string.people_activity_name);
+                break;
+            case R.layout.activity_settings:
+                toolBar.setTitle(R.string.settings_activity_name);
+                break;
+        }
+
     }
 
 
