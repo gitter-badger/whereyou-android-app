@@ -1,14 +1,19 @@
 package com.skynox.whereyou.app.activity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 import com.skynox.whereyou.app.Config;
 import com.skynox.whereyou.app.R;
+import com.skynox.whereyou.app.Untils;
 
 /**
  * Автор: Алексей Плешков (AlekseySkynox)
@@ -21,6 +26,10 @@ public class AbstractDefaultActivity extends AppCompatActivity {
     public Toolbar toolBar;
     public DrawerLayout drawerLayout;
     public NavigationView navigationView;
+    public View navigationViewHeader;
+    public TextView accountName;
+    public TextView accountMail;
+    public ImageView accountPhoto;
 
 
     @Override
@@ -71,6 +80,10 @@ public class AbstractDefaultActivity extends AppCompatActivity {
     public void initNavigationView() {
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        navigationViewHeader = navigationView.inflateHeaderView(R.layout.navigation_view_header);
+        accountName = (TextView) navigationViewHeader.findViewById(R.id.account_name);
+        accountMail = (TextView) navigationViewHeader.findViewById(R.id.account_mail);
+        accountPhoto = (ImageView) navigationViewHeader.findViewById(R.id.account_photo);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolBar, R.string.action_toggle_open, R.string.action_toggle_close);
         drawerLayout.setDrawerListener(toggle);
@@ -92,11 +105,17 @@ public class AbstractDefaultActivity extends AppCompatActivity {
                                 goToActivity(SettingsActivity.class);
                                 break;
                         }
-
                         return false;
                     }
                 }
         );
+
+        if (Config.ACCOUNT != null) {
+            Bitmap photo = new Untils().downloadImage(Config.ACCOUNT.getPhotoUrl().normalizeScheme().toString());
+            //accountPhoto.setImageBitmap(photo);
+            accountName.setText(Config.ACCOUNT.getDisplayName());
+            accountMail.setText(Config.ACCOUNT.getEmail());
+        }
     }
 
 

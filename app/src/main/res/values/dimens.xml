@@ -2,7 +2,14 @@
 
     <!-- Основное -->
     <dimen name="heightNavigationHead">192dp</dimen>
+    <dimen name="sizeTextBig">20sp</dimen>
     <dimen name="sizeTextNormal">15sp</dimen>
+    <dimen name="sizeTextSmall">10sp</dimen>
+    <dimen name="sizeAccountPhoto">40dp</dimen>
+    <dimen name="marginTopAccountPhoto">20dp</dimen>
+    <dimen name="marginTopAccountName">20dp</dimen>
+    <dimen name="marginTopAccountEmail">5dp</dimen>
+    <dimen name="marginTopAccountExit">10dp</dimen>
 
 
     <!-- MainActivity -->

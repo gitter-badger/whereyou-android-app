@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/heightNavigationHead"
+              android:background="@color/backgroundNavigationViewHead">
+
+
+    <ImageView
+            android:id="@+id/account_photo"
+            android:layout_width="@dimen/sizeAccountPhoto"
+            android:layout_height="@dimen/sizeAccountPhoto"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marginTopAccountPhoto"
+            android:contentDescription="@string/app_name"/>
+
+
+    <TextView
+            android:id="@+id/account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/sizeTextBig"
+            android:text="test"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/account_photo"
+            android:layout_marginTop="@dimen/marginTopAccountName"/>
+
+
+    <TextView
+            android:id="@+id/account_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorHint"
+            android:textSize="@dimen/sizeTextSmall"
+            android:text="test"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/account_name"
+            android:layout_marginTop="@dimen/marginTopAccountEmail"/>
+
+</RelativeLayout>

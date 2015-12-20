@@ -1,12 +1,14 @@
 package com.skynox.whereyou.app.activity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.skynox.whereyou.app.Config;
 import com.skynox.whereyou.app.R;
 
 /**

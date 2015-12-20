@@ -34,7 +34,7 @@
     </android.support.design.widget.CoordinatorLayout>
 
 
-    <include layout="@layout/fragment_navigation_view"
+    <include layout="@layout/navigation_view"
              android:id="@+id/navigation_view"
              android:layout_gravity="start"
              android:layout_width="match_parent"
