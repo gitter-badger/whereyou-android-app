@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.ListView;
 import com.skynox.whereyou.app.Config;
 import com.skynox.whereyou.app.R;
-import com.skynox.whereyou.app.adapters.PeopleListViewAdapter;
+import com.skynox.whereyou.app.adapter.PeopleListViewAdapter;
 
 /**
  * Автор: Алексей Плешков (AlekseySkynox)

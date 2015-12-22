@@ -1,7 +1,6 @@
 package com.skynox.whereyou.app.activity;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.skynox.whereyou.app.Config;
 import com.skynox.whereyou.app.R;
-import com.skynox.whereyou.app.Untils;
+import com.skynox.whereyou.app.until.ImageLoadTask;
 
 /**
  * Автор: Алексей Плешков (AlekseySkynox)
@@ -111,8 +110,7 @@ public class AbstractDefaultActivity extends AppCompatActivity {
         );
 
         if (Config.ACCOUNT != null) {
-            Bitmap photo = new Untils().downloadImage(Config.ACCOUNT.getPhotoUrl().normalizeScheme().toString());
-            //accountPhoto.setImageBitmap(photo);
+            new ImageLoadTask(Config.ACCOUNT.getPhotoUrl().normalizeScheme().toString(), accountPhoto).execute();
             accountName.setText(Config.ACCOUNT.getDisplayName());
             accountMail.setText(Config.ACCOUNT.getEmail());
         }
